@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm your signup</title>
+</head>
+<body>
+    <h2>Confirm your signup</h2>
+    <p>Hello {{ .Data.Name }},</p>
+    <p>Thank you for signing up with {{ .SiteURL }}. To complete your registration, please click the link below to confirm your email address:</p>
+
+    <p><a href="https://supabase.flomify.com/auth/v1/verify?token={{ .TokenHash }}&type=signup&redirect_to=http://igc8k4k8wggcg40sogccs0gc.192.3.44.157.sslip.io">Confirm your email</a></p>
+
+    <p>If you did not sign up, please ignore this email.</p>
+
+    <p>Best regards,<br>The {{ .SiteURL }} Team</p>
+</body>
+</html>
